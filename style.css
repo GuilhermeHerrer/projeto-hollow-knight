@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "trajan";
+    src: url(fontes/Trajan\ Pro\ Bold.ttf) format(truetype);
+    font-weight: normal;
+}
+
+:root{
+    --cor0:#fafbf6;
+    --cor1:#919191;
+    --cor2:#482d4b;
+    --cor3:#475d81;
+    --cor4:#22345a;
+    --cor5:#1b163f;
+    --font-hollow: "trajan";
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--cor4);
+}
+
+header{
+    background-color: var(--cor5);
+    text-align: center;
+}
+
+header img{
+  width: 28%;
+}
+
+#knight1{
+  width: 10%;
+}
+
+#knight2{
+  width: 10%;
+}
+
+nav{
+    font-family: var(--font-hollow);
+    text-align: center;
+    background-color: var(--cor3);
+    padding: 14px;
+}
+
+nav a{
+    padding: 10px;
+    color: var(--cor0);
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    text-align: justify;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: var(--cor0);
+    margin: auto;
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+}
+
+main h1{
+    margin: 8px 8px 50px 8px;
+    font-size: 70px;
+    text-align: center;
+    font-family: var(--font-hollow);
+    font-weight: bolder;
+}
+
+main h2{
+    margin: 17px;
+    text-align: center;
+    font-family: var(--font-hollow);
+}
+
+main p{
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    margin: 0px 25px 0px 25px;
+    text-indent: 33px;
+    line-height: 25px;
+}
+
+main strong{
+    color: var(--cor1);
+    font-family: var(--font-hollow);
+}
+
+footer{
+    color: var(--cor1);
+    font-family: var(--font-hollow);
+    text-align: center;
+    background-color: var(--cor3);
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor0);
+}
+
+footer a:hover{
+    text-decoration: line-through;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--cor2);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--cor0);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--cor0);
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    border-radius: 100%;
+    background-color: var(--cor1);
+  }
+  
+  #aberto{
+    transition: margin-left .5s;
+    padding: 16px;
+    position: absolute;
+    margin-top: -47px;    
+    left: 0;
+  }
+
+  .acordeao {
+    background-color: transparent;
+    color: var(--cor0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+    font-family: var(--font-hollow);
+  }
+  
+  .active, .acordeao:hover {
+    background-color: var(--cor1); 
+  }
+  
+  .painel {
+    text-align: left;
+    padding: 0 18px;
+    display: none;
+    background-color: transparent;
+    overflow: hidden;
+  }
+
+  .painel a{
+    font-size: 15px;
+  }
